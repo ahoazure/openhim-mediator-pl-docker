@@ -102,7 +102,7 @@ def getClient(request):
 			JSON object into subdictionaries function to replace the old keys with keys from the mapping dict 
 			"""
 			merge_payload = transform_merged_subdictionaries(data_dict)
-			# import pdb; pdb.set_trace()
+			import pdb; pdb.set_trace()
 			transformed_payload = replace_keys(merge_payload, keymap) # call the recursive function to replace the old keys with keys from the mapping dict     	
 			payload = json.dumps(transformed_payload) #Reconvert Python object into string to avoid invalid format
 			

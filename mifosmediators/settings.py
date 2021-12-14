@@ -80,13 +80,14 @@ WSGI_APPLICATION = 'mifosmediators.wsgi.application'
 DATABASES = {
    'default': {   # this is the legacy database
        'ENGINE': 'django.db.backends.mysql',
-       'NAME': 'openimis_mediators',
+       'NAME': 'mifosmediators',
        'OPTIONS': {
           'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+          'read_default_file': '/opt/lampp/etc/my.cnf',
            },
-       'USER': 'khroadmin',
-       'PASSWORD': 'Aho@1234',
-       'HOST': 'localhost',
+       'USER': 'root',
+       'PASSWORD': 'admin2834',
+       'HOST': 'db',
        'PORT': '3306',
    },
 }
